@@ -4,14 +4,14 @@ import styles from "./App.module.css";
 import { fetchData } from "./api";
 
 class App extends React.Component {
-  state ={
-    data: {},
-  }
+  state ={}
 
   async componentDidMount() {
     const fetchedData = await fetchData();
     this.setState({ data: fetchedData });
-    console.log("this is state", this.state)
+    // console.log("this is state", this.state)
+    // console.log("typeof", typeof this.state)
+
   }
 
   render() {
